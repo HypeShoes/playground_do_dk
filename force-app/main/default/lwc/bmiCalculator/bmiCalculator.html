@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : Matheus Branco (matheus.branco@globant.com)
+  @group             : 
+  @last modified on  : 06-27-2021
+  @last modified by  : Matheus Branco (matheus.branco@globant.com)
+  Modifications Log 
+  Ver   Date         Author                                        Modification
+  1.0   06-27-2021   Matheus Branco (matheus.branco@globant.com)   Initial Version
+-->
+<template>
+    <lightning-card title={cardTitle}>
+        <lightning-input type="number" step="0.01" label="Weight in Kilogram" onchange={onWeightChange}></lightning-input>
+        <lightning-input type="number" step="0.01" label="Height in Kilogram" onchange={onHeightChange}></lightning-input>
+        <lightning-button label="Get BMI" onchange={calculateBMI}></lightning-button>
+
+        <p>
+            Your BMI is: {}
+        </p>
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Matheus Branco (matheus.branco@globant.com)
+  @group             : 
+  @last modified on  : 06-26-2021
+  @last modified by  : Matheus Branco (matheus.branco@globant.com)
+  Modifications Log 
+  Ver   Date         Author                                        Modification
+  1.0   06-26-2021   Matheus Branco (matheus.branco@globant.com)   Initial Version
+-->
+<template>
+    <!--<div class="hello-world">Hello World</div>-->
+    <lightning-card title="Hello World LWC">
+        <div class="greeting-class">Hello {dynamicGreeting}</div>
+        <div style="color:white; background:black;">Inline CSS Style</div>
+
+        <div>Styling with element tag name</div>
+        <lightning-input label="Greeting" onchange={greetingChange}></lightning-input>
+    </lightning-card>
+</template>

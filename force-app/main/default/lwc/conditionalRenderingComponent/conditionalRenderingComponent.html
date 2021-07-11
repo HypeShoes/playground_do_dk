@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Matheus Branco (matheus.branco@globant.com)
+  @group             : 
+  @last modified on  : 06-26-2021
+  @last modified by  : Matheus Branco (matheus.branco@globant.com)
+  Modifications Log 
+  Ver   Date         Author                                        Modification
+  1.0   06-26-2021   Matheus Branco (matheus.branco@globant.com)   Initial Version
+-->
+<template>
+    <lightning-input type="checkbox" label="Show Div" onchange={showDivHandler}></lightning-input>
+    <template if:true={displayDiv}>
+        <div>I am here</div>
+    </template>
+
+    <template for:each={cityList} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+
+    <h3>Below is an example of iterator directive</h3>
+    <template iterator:it={cityList}>
+        <p key={it.value}>{it.value}</p>
+    </template>
+</template>

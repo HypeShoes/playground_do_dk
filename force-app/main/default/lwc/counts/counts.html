@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Matheus Branco (matheus.branco@globant.com)
+  @group             : 
+  @last modified on  : 06-20-2021
+  @last modified by  : Matheus Branco (matheus.branco@globant.com)
+  Modifications Log 
+  Ver   Date         Author                                        Modification
+  1.0   06-20-2021   Matheus Branco (matheus.branco@globant.com)   Initial Version
+-->
+<template>
+    <lightning-card title="Counts" icon-name="action:change_record_type">
+        <p class="slds-text-align_center slds-var-m-vertical_medium">
+          Prior Count: <lightning-formatted-number value={priorCount}></lightning-formatted-number>
+        </p>
+        <p class="slds-text-align_center slds-var-m-vertical_medium">
+          Count: <lightning-formatted-number value={counter}></lightning-formatted-number>
+        </p>
+      </lightning-card>
+</template>
